@@ -1,0 +1,39 @@
+mqtt:
+  host: 'localhost'
+  port: 1883
+  topic: telegram/push_notification
+  is_tls: false
+  tls_port: 8883
+  keep_alive: 30
+  qos: 2
+  clean_session: False
+
+mongodb:
+  host: "localhost"
+  port: 27017
+  user_name: null
+  password: null
+  metadatadb: theiox_metadata
+  eventsdb: theiox_events
+  daqdb: theiox_data
+  aggregationdb: theiox_aggregation
+  flowsdb: theiox_flows
+  reportsdb: theiox_reports
+  widgetdb: theiox_widget
+
+log:
+  file_name: notification
+  path: C:\gitlab\telegram-integration\telegram
+  level: DEBUG
+  retention: '5 days' # "1 week, 3 days", "2 months"
+  rotation: '5 MB' # "100 MB", "0.5 GB", "1 month 2 weeks", "4 days", "10h", "monthly", "18:00", "sunday", "w0", "monday at 12:00"
+
+telegram:
+  api_id: 22241399
+  hash_id: 5d8a24d581e2c1d3c97d06c36e516b19
+
+details:
+  image: C:\Users\srini\Downloads\elm.png
+  gif: C:\Users\srini\Downloads\giphy.gif
+  video: C:\Users\srini\Downloads\WhatsApp Video 2023-11-08 at 10.56.59 AM.mp4
+  document: C:\Users\srini\Downloads\5th sem student list.xlsx
